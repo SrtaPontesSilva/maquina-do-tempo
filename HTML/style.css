@@ -1,0 +1,61 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+/* Estilos da Seção de Cabeçalho */
+.header-background {
+    background-image: url('/HTML/Design\ sem\ nome.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #5b033f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos das Seções de Conteúdo */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para as seções */
+}
+
+section h2 {
+    color: #3b1234;
+    font-size: 24px;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
+}
+
+/* Estilos do Título Principal */
+h1 {
+    text-align: center;
+    font-size: 28px; /* Tamanho de fonte maior para o título principal */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título principal */
+}
+
+#indice {
+    margin-left: 40px; /* Adicione uma margem à esquerda para afastar o índice para a direita */
+    margin-top: 15px; /* Adicione uma margem superior para descer o índice */
+}

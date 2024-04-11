@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5b033f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.title-bar {
+    background-color: #ffcc00; /* Cor da faixa colorida */
+    width: 100%;
+    height: 30px; /* Altura da faixa colorida */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    z-index: -1; /* Coloca a faixa atrás do título */
+}
+
+.title-container {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilize a caixa que contém a capa e as informações do livro */
+.book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Alinhar verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+/* Centralize a capa do livro na caixa */
+.book img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    margin: 5px 0;
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
+}
+
+footer {
+    background-color: #5b033f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.introduction {
+    background-color: #f7f7f7;
+    text-align: justify;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
