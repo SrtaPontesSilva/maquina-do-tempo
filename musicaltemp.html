@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="musicaltemp.css">
+    <title>Musical Temporal</title>
+    <style>
+        /* Adicione estilos CSS personalizados aqui para melhorar a aparência */
+        .music-box {
+            border: 1px solid #ccc;
+            margin: 10px auto; /* Centralize horizontalmente as caixas de músicas */
+            padding: 10px;
+            margin-bottom: 30px; /* Aumente o valor para ajustar o espaçamento entre as músicas */
+            border-radius: 10px; /* Adicione bordas arredondadas */
+            background-color: #f0f0f0; /* Cor de fundo das caixas de música */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .music-box:hover {
+            background-color: #5b033f; /* Altere a cor de fundo ao passar o mouse */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adicione uma sombra */
+            transform: scale(1.05); /* Aumente o tamanho ao passar o mouse */
+            color: #fff;
+            margin: 20px;
+        }
+
+        .music-title {
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .music-box:hover .music-title {
+            color: #fff; /* Cor do título quando o mouse passar por cima */
+        }
+
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px; /* Aumente o valor para ajustar o espaçamento entre as bordas da tela e o conteúdo */
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilo para o cabeçalho */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 35px; /* Espaçamento externo para o cabeçalho */
+            background-color: #5b033f;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Estilo para a introdução */
+        .introduction-container {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Estilo para o conteúdo principal */
+        main {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        /* Estilo para o elemento de áudio */
+        audio {
+            width: 100%;
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #5b033f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%; /* Ocupar toda a largura da página */
+        }
+
+        .image-carousel {
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-item {
+            text-align: center;
+         }
+
+        .carousel-image {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #5b033f;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .image-caption {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .carousel-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Musical Temporal</h1>
+    </header>
+    <div class="introduction-container">
+        <h2>Introdução</h2>
+        <p>O Musical Temporal é onde a música se torna uma janela para viajar através do tempo e experimentar as diversas eras históricas por meio de suas trilhas sonoras.</p>
+        <p>Nossa missão é levar você a uma jornada musical única, explorando desde as harmonias intemporais da música clássica até as batidas contemporâneas que definem a nossa era. Cada período da história é refletido em notas musicais que ecoam os sentimentos e as emoções da época.</p>
+        <p>Prepare-se para uma experiência musical enriquecedora, onde você poderá sentir a evolução da música ao longo dos séculos e apreciar a riqueza da expressão artística em cada era.</p>
+        <p>Entre em sintonia com o passado e o presente da música enquanto mergulha nas melodias que moldaram a história.</p>
+    </div>
+    <div class="main-container">
+    <div class="theme">
+        <h1>Escravidão</h1>
+        <div class="divider"></div>
+        <p>Muitas músicas brasileiras são consideradas herança africana dos tempos da escravidão, refletindo a influência e a contribuição da cultura africana na música do Brasil. Alguns exemplos notáveis incluem:</p>
+        <div class="image-carousel">
+            <figure class="carousel-item">
+              <img class="carousel-image" src="/HTML/Carrossel Imagens/Escravidão/Samba.jpeg" alt="Image 1">
+              <figcaption class="image-caption">Samba</figcaption>
+            </figure>
+          
+            <figure class="carousel-item">
+              <img class="carousel-image" src="/HTML/Carrossel Imagens/Escravidão/Candomblé e Umbanda.jpeg" alt="Image 2">
+              <figcaption class="image-caption">Candomblé e Umbanda</figcaption>
+            </figure>
+          
+            <figure class="carousel-item">
+              <img class="carousel-image" src="/HTML/Carrossel Imagens/Escravidão/Maracatu.jpeg" alt="Image 3">
+              <figcaption class="image-caption">Maracatu</figcaption>
+            </figure>
+          
+            <figure class="carousel-item">
+              <img class="carousel-image" src="/HTML/Carrossel Imagens/Escravidão/'Dancing Jongo'.jpeg" alt="Image 4">
+              <figcaption class="image-caption">Jongo</figcaption>
+            </figure>
+          
+            <figure class="carousel-item">
+              <img class="carousel-image" src="/HTML/Carrossel Imagens/Escravidão/Capoeira.jpeg" alt="Image 5">
+              <figcaption class="image-caption">Capoeira</figcaption>
+            </figure>
+          </div>
+          <p>1. <i>Samba:</i> O samba, um gênero musical e uma dança emblemáticos do Brasil, tem raízes profundas na cultura africana, incorporando ritmos, instrumentos e tradições musicais africanas. O "samba de roda" da Bahia é um exemplo dessa influência.</p> 
+        <p>2. <i>Candomblé e Umbanda:</i> As religiões afro-brasileiras, como o Candomblé e a Umbanda, têm uma forte conexão com a música e dança africanas. Os cânticos e ritmos dessas religiões são uma expressão musical da herança africana.</p>
+        <p>3. <i>Maracatu:</i> Originário de Pernambuco, o maracatu é um ritmo e estilo de música que tem suas raízes na cultura africana. É uma parte importante das festas de carnaval do estado.</p>
+        <p>4. <i>Jongo:</i> O Jongo é uma tradição musical afro-brasileira que tem origens nas práticas musicais africanas trazidas por escravizados. É uma dança e canto que preserva a herança africana.</p>
+        <p>5. <i>Capoeira:</i> Embora seja uma forma de arte marcial, a capoeira também incorpora música. Os instrumentos e canções da capoeira têm influência africana e são parte integrante dessa prática.</p>
+        Essas são apenas algumas das muitas formas de música no Brasil que são consideradas herança africana dos tempos da escravidão. Elas desempenharam um papel fundamental na preservação da cultura afro-brasileira e continuam a ser celebradas e praticadas até hoje.</p>
+        <div class="divider"></div>
+        <div class="sub-theme">
+            <h3>Internacionais</h3>
+        <div class="music-box">
+            <h3 class="music-title">Swing Low, Sweet Chariot - B.B. King</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/SnapInsta.io - B.B. King - Swing Low Sweet Chariot (1959) (128 kbps).mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Uma espiritual afro-americana que era cantada por escravos e frequentemente associada à esperança de liberdade.</p>
+        </div>
+        <div class="music-box">
+            <h3 class="music-title">Go Down Moses - Mica paris</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/Mica Paris - Go Down Moses (Official Audio).mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Outra espiritual que faz referência à história de Moisés e os israelitas, muitas vezes interpretada como uma expressão de desejo de liberdade dos escravos.</p>
+        </div>
+        <div class="music-box">
+            <h3 class="music-title">Follow the Drinking Gourd - Richie Havens</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/Follow the Drinking Gourd.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Uma canção que supostamente continha instruções cifradas para a fuga de escravos pela Underground Railroad.</p>
+        </div>
+        <div class="music-box">
+            <h3 class="music-title">The Battle hymn of the Republic - Julia Ward Howe</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/The Battle Hymn of the Republic.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Embora não seja da época da escravidão, esta música tornou-se um hino da União durante a Guerra Civil dos EUA e expressa temas de liberdade e justiça.</p>
+        </div>
+        <div class="music-box">
+            <h3 class="music-title">Redemption Song - Bob Marley</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/Bob Marley & The Wailers - Redemption Song.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Aborda o tema da escravidão.</p>
+        </div>
+        <div class="music-box">
+            <h3 class="music-title">Strange Fruit - Billie Holiday</h3>
+            <audio controls>
+                <source src="/HTML/Músicas/Internacionais/Billie Holiday-Strange fruit- HD.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Aborda o tema da escravidão.</p>
+        </div>
+            </div>
+            <div class="divider"></div>
+            <div class="sub-theme">
+                <h3>Nacionais</h3>
+                <div class="divider"></div>
+                <div class="music-box">
+                    <h3 class="music-title">Negro Drama - Racionais MC's</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Negro drama - Racionais Mcs.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Fala sobre a experiência negra no Brasil.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Menino Mimado - Criolo</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/CRIOLO - Menino Mimado.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Fala sobre a experiência negra no Brasil.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">A Carne - Elza Soares</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/A Carne - Elza Soares.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Aborda o tema da desigualdade racial.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Pérola Negra - Luiz Melodia</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Luiz Melodia - Pérola Negra (Ao Vivo).mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Para ouvir no 13 de maio, dia da abolição.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Anunciação - Alceu Valença</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Anunciação.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Para ouvir no 13 de maio, dia da abolição.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Canto de Ossanha - Baden Powell e Vinícius de Moraes</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Canto de Ossanha - Baden Powel e Vinícius de Moraes.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Explora o canto dos escravos.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Berimbau - Baden Powell e Vinícius de Moraes</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Berimbau (Baden Powell - Vinícius de Moraes).mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Explora o canto dos escravos e a herança africana na música brasileira.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Água de Beber - Tom Jobim e Vinícius de Moraes</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Água de Beber - Tom Jobim & Vinicius de Moraes (1978).mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Aborda a herança africana na música brasileira.</p>
+                </div>
+            </div>
+            <div class="theme">
+                <h1>Proclamação da República</h1>
+                <div class="divider"></div>
+                <div class="image-carousel">
+                    <img class="carousel-image" src="/HTML/Carrossel Imagens/Proclamação da República/download.jpg" alt="Image 1">
+                    <img class="carousel-image" src="/HTML/Carrossel Imagens/Proclamação da República/Post Feed Data Comemorativa Proclamação da Republica Social Media PSD Editável.jpg" alt="Image 2">
+                    <img class="carousel-image" src="/HTML/Carrossel Imagens/Proclamação da República/🇧🇷 A Proclamação da República Brasileira.jpg" alt="Image 3">
+                </div>
+                <div class="divider"></div>
+                <div class="sub-theme">
+                    <h3>Internacionais</h3>
+                    <div class="divider"></div>
+                    <div class="music-box">
+                        <h3 class="music-title">Revolution - The Beatles</h3>
+                        <audio controls>
+                            <source src="/HTML/Músicas/Internacionais/Procl. Repub/The Beatles - Revolution.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <p>Embora não aborde diretamente a Proclamação da República, "Revolutions" dos Beatles fala sobre revoluções e mudanças sociais, temas que podem ser associados a eventos históricos como a Proclamação da República.</p>
+                    </div>
+                    <div class="music-box">
+                        <h3 class="music-title">Wind of Change - Scorpions</h3>
+                        <audio controls>
+                            <source src="/HTML/Músicas/Internacionais/Procl. Repub/Wind of Change.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <p>Esta música é associada a mudanças políticas e sociais, incluindo os eventos que levaram à queda do Muro de Berlim. Pode ser interpretada no contexto de movimentos históricos de transformação, como a Proclamação da República.</p>
+                    </div>
+            </div>
+            <div class="sub-theme">
+                <h3>Nacionais</h3>
+                <div class="divider"></div>
+                <div class="music-box">
+                    <h3 class="music-title">Hino da Proclamação da República - Medeiros e Albuquerque e Leopoldo Miguez</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Procl. Repub/Hino da Proclamação da República do Brasil.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Este hino, composto por Leopoldo Miguez e Medeiros e Albuquerque, celebra o evento histórico da Proclamação da República no Brasil.</p>
+                </div>
+                <div class="music-box">
+                    <h3 class="music-title">Canção do Subdesenvolvido - Carlos Lyra</h3>
+                    <audio controls>
+                        <source src="/HTML/Músicas/Nacionais/Procl. Repub/Carlos Lyra - Canção do Subdesenvolvido.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Composta em 1973, esta música, apesar de não abordar diretamente a Proclamação da República, retrata momentos políticos do Brasil, incluindo questões sociais e políticas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Musical Temporal C.A.</p>
+    </footer>
+</body>
+</html>

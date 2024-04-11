@@ -1,0 +1,72 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Aumente o valor para ajustar o espaçamento entre as bordas da tela e o conteúdo */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    position: relative;
+    text-align: center;
+    padding: 35px; /* Espaçamento externo para o cabeçalho */
+    background-color: #5b033f;
+    width: 100%; /* Ocupar toda a largura da página */
+    color: #fff;
+}
+
+/* Estilo para a lista de músicas */
+.music-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Divida as caixas de músicas em 2 colunas opostas */
+}
+
+/* Estilo para cada item da lista de músicas */
+.music-box {
+    border: 1px solid #ccc;
+    margin: 0 auto; /* Centralize horizontalmente as caixas de músicas */
+    padding: 10px;
+    margin-bottom: 30px; /* Aumente o valor para ajustar o espaçamento entre as músicas */
+    border-radius: 10px; /* Adicione bordas arredondadas */
+    background-color: #f0f0f0; /* Cor de fundo das caixas de música */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo para as faixas divisoras */
+.divider {
+    background-color: #8B008B; /* Cor roxo escuro vinho */
+    height: 2px;
+    margin: 5px 0;
+    width: 100%; /* Ocupar toda a largura da página */
+}
+
+/* Estilo para os títulos e subtítulos */
+h2, h3 {
+    color: #8B008B; /* Cor roxo escuro vinho */
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#site-title {
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.music-box:hover {
+    background-color: #5b033f; /* Altere a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adicione uma sombra */
+    transform: scale(1.05); /* Aumente o tamanho ao passar o mouse */
+    color: #fff;
+    margin: 20px auto; /* Centraliza horizontalmente e ajusta a margem desejada entre as caixas de música */
+    margin-bottom: 30px; /* Aumente ou diminua o valor para ajustar o espaçamento entre as músicas */
+    border-radius: 20px; /* Adicione bordas arredondadas */
+}
+
+.music-box:hover .music-title {
+    color: #fff; /* Cor do título quando o mouse passar por cima */
+}
